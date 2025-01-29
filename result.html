@@ -1,24 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grading Results</title>
 </head>
 <body>
-    <h2>Essay Grading Results</h2>
-    <p><strong>Prompt:</strong> {{ prompt }}</p>
-    <p><strong>Passage:</strong> {{ passage }}</p>
-    <p><strong>Your Essay:</strong></p>
-    <p>{{ essay }}</p>
-    
-    <h3>Scores:</h3>
+    <h1>Grading Results</h1>
     <ul>
-        <li>Purpose, Focus, and Organization: {{ rubric['Purpose, Focus, and Organization'] }}/4</li>
-        <li>Evidence and Elaboration: {{ rubric['Evidence and Elaboration'] }}/4</li>
-        <li>Conventions: {{ rubric['Conventions'] }}/2</li>
+        <li>Purpose, Focus, and Organization: {{ result["Purpose, Focus, and Organization"] }}/1</li>
+        <li>Evidence and Elaboration: {{ result["Evidence and Elaboration"] }}/1</li>
+        <li>Conventions: {{ result["Conventions"] }}/1</li>
+        <li><strong>Total Score: {{ result["Total Score"] }}/3</strong></li>
     </ul>
-    
-    <h3>Total Score: {{ total_score }}/10</h3>
-    
-    <a href="/">Grade Another Essay</a>
+    <a href="/">Go back</a>
 </body>
 </html>
