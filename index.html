@@ -1,21 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Essay Grader</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Essay Grading</title>
 </head>
 <body>
-    <h2>Essay Grading System</h2>
-    <form action="/" method="post">
-        <label for="prompt">Essay Prompt:</label><br>
-        <textarea id="prompt" name="prompt" rows="2" cols="50"></textarea><br><br>
-        
-        <label for="passage">Passage:</label><br>
-        <textarea id="passage" name="passage" rows="4" cols="50"></textarea><br><br>
-        
-        <label for="essay">Your Essay:</label><br>
-        <textarea id="essay" name="essay" rows="10" cols="50" required></textarea><br><br>
-        
-        <input type="submit" value="Submit">
+    <h1>Enter Your Essay for Grading</h1>
+    <form action="/grade" method="post">
+        <textarea name="essay" rows="10" cols="50" placeholder="Enter your essay here..."></textarea><br>
+        <button type="submit">Submit</button>
     </form>
 </body>
 </html>
