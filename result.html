@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Grading Results</title>
+</head>
+<body>
+    <h2>Essay Grading Results</h2>
+    <p><strong>Prompt:</strong> {{ prompt }}</p>
+    <p><strong>Passage:</strong> {{ passage }}</p>
+    <p><strong>Your Essay:</strong></p>
+    <p>{{ essay }}</p>
+    
+    <h3>Scores:</h3>
+    <ul>
+        <li>Purpose, Focus, and Organization: {{ rubric['Purpose, Focus, and Organization'] }}/4</li>
+        <li>Evidence and Elaboration: {{ rubric['Evidence and Elaboration'] }}/4</li>
+        <li>Conventions: {{ rubric['Conventions'] }}/2</li>
+    </ul>
+    
+    <h3>Total Score: {{ total_score }}/10</h3>
+    
+    <a href="/">Grade Another Essay</a>
+</body>
+</html>
